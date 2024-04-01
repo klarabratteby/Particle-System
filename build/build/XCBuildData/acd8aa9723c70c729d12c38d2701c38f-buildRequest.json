@@ -1,0 +1,78 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "4ec79e1a07d6c66b8a2f0e768bfeb48a8a208e279d095bc1ad3699a0d5f8539c"
+    },
+    {
+      "guid" : "4ec79e1a07d6c66b8a2f0e768bfeb48a42f4fd2101b4281e9b0fa2e2134c2452"
+    },
+    {
+      "guid" : "4ec79e1a07d6c66b8a2f0e768bfeb48a082df0d0511aab87e8eb38ff4792691f"
+    },
+    {
+      "guid" : "4ec79e1a07d6c66b8a2f0e768bfeb48a639f9556762dd174db706ea8ced24a22"
+    },
+    {
+      "guid" : "4ec79e1a07d6c66b8a2f0e768bfeb48ac00d10ea75a9c2bc133f76e5850110db"
+    },
+    {
+      "guid" : "4ec79e1a07d6c66b8a2f0e768bfeb48aad20b41ad6f7dd61d9f8e1d0e1a6e4ff"
+    },
+    {
+      "guid" : "4ec79e1a07d6c66b8a2f0e768bfeb48ab9ed46433e80a049ecad94d6e04f8ddc"
+    }
+  ],
+  "containerPath" : "/Users/klarabratteby/particlesystem/build/particlesystem.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx13.1",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/klarabratteby/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/klarabratteby/Library/Developer/Xcode/DerivedData/particlesystem-akmjaokfcnnskwfplbckueifijnx/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/klarabratteby/Library/Developer/Xcode/DerivedData/particlesystem-akmjaokfcnnskwfplbckueifijnx/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_ADDRESS_SANITIZER" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_UNDEFINED_BEHAVIOR_SANITIZER" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

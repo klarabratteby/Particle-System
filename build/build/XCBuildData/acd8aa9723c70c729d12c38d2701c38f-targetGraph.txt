@@ -1,0 +1,20 @@
+Target dependency graph (7 targets)
+ZERO_CHECK in particlesystem, no dependencies
+rendering in particlesystem, depends on:
+ZERO_CHECK in particlesystem (explicit)
+particlesystem in particlesystem, depends on:
+ZERO_CHECK in particlesystem (explicit)
+unittest in particlesystem, depends on:
+particlesystem in particlesystem (explicit)
+ZERO_CHECK in particlesystem (explicit)
+application in particlesystem, depends on:
+rendering in particlesystem (explicit)
+particlesystem in particlesystem (explicit)
+ZERO_CHECK in particlesystem (explicit)
+ALL_BUILD in particlesystem, depends on:
+rendering in particlesystem (explicit)
+particlesystem in particlesystem (explicit)
+unittest in particlesystem (explicit)
+application in particlesystem (explicit)
+ZERO_CHECK in particlesystem (explicit)
+RUN_TESTS in particlesystem, no dependencies

@@ -1,0 +1,289 @@
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 875d0e827fd17fabdf04b51cb8f6f2e842162fcb817e45c8e47e7eb476e39583
+Type: Port
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2022-11-13
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 02d60fa7d64d1449911425f4b4988913eba076e846eab30159d3c87ccb4e22f4
+Type: Port
+Status: install ok installed
+
+Package: catch2
+Version: 3.2.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 86bd3ecc038bc278eb989ec2a29b08875eee478e92c99927ae251a9cfebd184e
+Description: A modern, header-only test framework for unit testing.
+Type: Port
+Status: install ok installed
+
+Package: fmt
+Version: 9.1.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: ea854ce9d50dd7ec5f26a31ec95db51ef8e34c2c1c981b4480efeb9d3179ad9f
+Description: Formatting library for C++. It can be used as a safe alternative to printf or as a fast alternative to IOStreams.
+Type: Port
+Status: install ok installed
+
+Package: egl-registry
+Version: 2022-09-20
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: cbaa46d5de56d013a3b9df6a1d494cdf3fe245e2105497bf9f90cea75335c524
+Description: the EGL API and Extension Registry
+Type: Port
+Status: install ok installed
+
+Package: opengl-registry
+Version: 2022-09-29
+Depends: egl-registry
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 465c1e8bb35a9f0c28c94ea9be92c397bdea873cd4e127d2dc4d38198a459f2e
+Description: the API and Extension registries for the OpenGL family APIs
+Type: Port
+Status: install ok installed
+
+Package: glad
+Version: 0.1.36
+Depends: egl-registry, opengl-registry, vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 2ee0005db1ffa36abbbc62c95146911c76eab29db58e61074dc933abea0e8f65
+Description: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.
+Type: Port
+Default-Features: loader
+Status: install ok installed
+
+Package: glad
+Feature: loader
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Generate loader logic.
+Type: Port
+Status: install ok installed
+
+Package: glfw3
+Version: 3.3.8
+Port-Version: 2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: fb5442ea01aa6c8f4165ec0d850147286a6fbdd44d9eab0632a0b3ab0baa14c4
+Description: GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.
+Type: Port
+Status: install ok installed
+
+Package: glm
+Version: 0.9.9.8
+Port-Version: 1
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 3d9f1b3983d84dfb830ff435f4a59829b1de038d03eead0afb53466860660cec
+Description: OpenGL Mathematics (GLM)
+Type: Port
+Status: install ok installed
+
+Package: imgui
+Version: 1.89.2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: cf3200bba34c356e9dac7decba1d1443ded942b01ffe139208262e69c44b6f92
+Description: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies.
+Type: Port
+Status: install ok installed
+
+Package: imgui
+Feature: glfw-binding
+Depends: glfw3
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Make available GLFW binding
+Type: Port
+Status: install ok installed
+
+Package: imgui
+Feature: opengl3-binding
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Make available OpenGL3/ES/ES2 (modern) binding
+Type: Port
+Status: install ok installed
+
+Package: zlib
+Version: 1.2.13
+Depends: vcpkg-cmake
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 8eaa681df5247de597cb62c77181ccb9f36cd081945ab850bdc0a09207928f68
+Description: A compression library
+Type: Port
+Status: install ok installed
+
+Package: libpng
+Version: 1.6.39
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 0e8c7957cf7115e8b08a0fa2d20ec1da39b6be87c1ea01cd408fa42efeb424d5
+Description: libpng is a library implementing an interface for reading and writing PNG (Portable Network Graphics) format files
+Type: Port
+Status: install ok installed
+
+Package: bzip2
+Version: 1.0.8
+Port-Version: 3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 338c7fd25882ddc6f421a35b5cb505edc7cdc154890618f26ea5abbbf5d96141
+Description: bzip2 is a freely available, patent free, high-quality data compressor. It typically compresses files to within 10% to 15% of the best available techniques (the PPM family of statistical compressors), whilst being around twice as fast at compression and six times faster at decompression.
+Type: Port
+Default-Features: tool
+Status: install ok installed
+
+Package: bzip2
+Feature: tool
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Builds bzip2 executable
+Type: Port
+Status: install ok installed
+
+Package: brotli
+Version: 1.0.9
+Port-Version: 4
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: e1b008314aa4e1818754abb93877ed3c1a6ca94e5ea1985f945909f2f9b15dbb
+Description: a generic-purpose lossless compression algorithm that compresses data using a combination of a modern variant of the LZ77 algorithm, Huffman coding and 2nd order context modeling.
+Type: Port
+Status: install ok installed
+
+Package: freetype
+Version: 2.12.1
+Port-Version: 3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 2ffa75e72f301008713513c80522f7b266f9b5c635c7ac6c9521bdb70d716c87
+Description: A library to render fonts.
+Type: Port
+Default-Features: brotli, bzip2, png, zlib
+Status: install ok installed
+
+Package: freetype
+Feature: brotli
+Depends: brotli
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Support decompression of WOFF2 streams
+Type: Port
+Status: install ok installed
+
+Package: freetype
+Feature: bzip2
+Depends: bzip2
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Support bzip2 compressed fonts.
+Type: Port
+Status: install ok installed
+
+Package: freetype
+Feature: png
+Depends: libpng
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Support PNG compressed OpenType embedded bitmaps.
+Type: Port
+Status: install ok installed
+
+Package: freetype
+Feature: zlib
+Depends: zlib
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Use zlib instead of internal library for DEFLATE
+Type: Port
+Status: install ok installed
+
+Package: capstone
+Version: 5.0.0-rc2
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: d30508c43ebba9e0b638d42f21c5260af5fdcaa663f1de2a806cc3803b1ae6ec
+Description: Multi-architecture disassembly framework
+Type: Port
+Status: install ok installed
+
+Package: capstone
+Feature: arm
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Capstone disassembly support for ARM
+Type: Port
+Status: install ok installed
+
+Package: capstone
+Feature: arm64
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Capstone disassembly support for ARM64
+Type: Port
+Status: install ok installed
+
+Package: capstone
+Feature: x86
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Capstone disassembly support for x86
+Type: Port
+Status: install ok installed
+
+Package: pthreads
+Version: 3.0.0
+Port-Version: 13
+Depends: vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 2e84c257184b9fa46a55727ef165dd9a0050938705b58c04a1fb86fccce3d51e
+Description: Meta-package that provides PThreads4W on Windows, or assumes presence of system pthreads on POSIX systems.
+Type: Port
+Status: install ok installed
+
+Package: tracy
+Version: 0.9.0
+Port-Version: 1
+Depends: pthreads, vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 160890656a04c78d31a75a806bc941b96619df088ade55e73e8e83c751b0c78e
+Description: A real time, nanosecond resolution, remote telemetry, hybrid frame and sampling profiler for games and other applications.
+Type: Port
+Status: install ok installed
+
+Package: tracy
+Feature: gui-tools
+Depends: capstone, freetype, glfw3
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Build Tracy GUI tool: `profiler` (aka `Tracy` executable)
+Type: Port
+Status: install ok installed
+
